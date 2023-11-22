@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddObservation"
+    android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="20dp"
+            android:textColor="@color/main"/>
+        <EditText
+            android:id="@+id/edtObservationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe the observation"
+            android:textSize="20dp"
+            android:textColor="@color/main"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="20dp"
+            android:textColor="@color/main"
+            android:layout_weight="3"/>
+        <TextView
+            android:id="@+id/showObservationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/main"
+            android:layout_weight="3"/>
+        <Button
+            android:id="@+id/btnObservationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:backgroundTint="@color/main"
+            android:layout_weight="4"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:textSize="20dp"
+            android:textColor="@color/main"/>
+        <EditText
+            android:id="@+id/edtObservationComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comment on the observation"
+            android:textSize="20dp"
+            android:textColor="@color/main"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnObservationAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:backgroundTint="@color/main"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</LinearLayout>
